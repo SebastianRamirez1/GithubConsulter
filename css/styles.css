@@ -1,0 +1,121 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.contenido-seccion-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid black;
+    max-width: 550px;
+}
+
+.contenido-seccion-principal div{
+    margin: 10px 0 10px 0;
+}
+
+.contenido-seccion-principal h1{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.consultar{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 70%;
+
+}
+
+.consultar button{
+    width: 30%;
+    align-self: center;
+}
+
+.consultar input{
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 28px;
+}
+
+.consultar label{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 10px;
+    width: 100%;
+    align-self: center;
+    height: 30px;
+}
+
+.informacion{
+    display: flex;
+    border: 1px solid red;
+    width: 90%;
+}
+
+.informacion .avatar{
+    width: 50%;
+    padding: 10px;
+}
+
+.informacion .avatar img{
+    max-width: 100%;
+    display: block !important;
+}
+
+.informacion .datos{
+    width: 50%;
+    padding: 10px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.informacion .datos p{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width: 300px){
+    .consultar {
+        width: 100%;
+    }
+
+    .informacion {
+        flex-wrap: wrap !important;;
+    }
+
+    .informacion .avatar {
+        width: 100%;
+    }
+
+    .informacion .datos{
+        width: 100%;
+    }
+}
+
