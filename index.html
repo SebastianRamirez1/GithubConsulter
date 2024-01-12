@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;500&family=Work+Sans:wght@100;200;300;400;600;800&display=swap" rel="stylesheet">
+        <title>Github Consulter</title>
+    </head>
+    <body>
+
+        <!--Seccion Principal-->
+        <section class="principal">
+            <div class="contenido-seccion-principal">
+                <h1>Github Consulter</h1>
+                <div class="consultar">
+                    <label>Consultar usuario:</label>
+                    <input type="text" id="usuario" placeholder="Introduce el nombre de un usuario">
+                    <button onclick="obtenerTexto()">Buscar</button>
+                </div>
+                <div class="informacion">
+                    <div class="avatar">
+                        <img id="imgavatar" src="" alt="">
+                    </div>
+                    <div class="datos">
+                        <p id="name"></p>
+                        <p id="followers"></p>
+                        <p id="repos"></p>
+                        <p id="repos_link"></p>
+                        <p id="fecha"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="js/javascript.js"></script>
+
+    </body>
+</html>
